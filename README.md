@@ -1,13 +1,14 @@
-## DESCRIPTION
+## Description
 
 Simple Python script to retrieve songs from YouTube using [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 or a given file path; and split them into 6 stems through [Hybrid Transformer Demucs](https://github.com/facebookresearch/demucs).
+Additionaly, a backing track is created by combining all stems except guitar.
 
-## REQUIREMENTS
+## Requirements
 
 [Anaconda](https://www.anaconda.com/download) installation.
 
-## SETUP
+## Setup
 
 1.	Install Demucs in new Anaconda environment.
 
@@ -41,7 +42,7 @@ or a given file path; and split them into 6 stems through [Hybrid Transformer De
 	```
 3.	Download ffmpeg binary from https://github.com/yt-dlp/FFmpeg-Builds and place it in the same directory as the script.
 
-## USAGE
+## Usage
 
 Launch split.py from demucs Anaconda environment and input any YouTube URL or 
 audio file path (with a format supported by [Torchaudio](https://github.com/pytorch/audio)):
