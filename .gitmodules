@@ -1,0 +1,3 @@
+[submodule "demucs_repo"]
+	path = demucs_repo
+	url = https://github.com/facebookresearch/demucs.git
