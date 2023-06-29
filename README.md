@@ -1,3 +1,8 @@
+## DESCRIPTION
+
+Simple Python script to retrieve songs from YouTube using yt-dlp (https://github.com/yt-dlp/yt-dlp) and
+split into 6 stems through Hybrid Transformer Demucs (https://github.com/facebookresearch/demucs).
+
 ## REQUIREMENTS
 
 Anaconda installation (https://www.anaconda.com/download).
@@ -24,7 +29,7 @@ Anaconda installation (https://www.anaconda.com/download).
 		conda activate demucs
 		conda remove pytorch
 		```
-		- Install latest CUDA bundled PyTorch from https://pytorch.org/
+		- Install latest CUDA bundled PyTorch from https://pytorch.org/.
 2.	Install yt-dlp in the same environment:
 	```
 	conda activate demucs
@@ -34,4 +39,8 @@ Anaconda installation (https://www.anaconda.com/download).
 
 ## USAGE
 
-Launch split.py from demucs Anaconda environment and input YouTube URL.
+Launch split.py from demucs Anaconda environment and input any YouTube URL:
+
+```
+python split.py https://www.youtube.com/watch?v=dQw4w9WgXcQ
+```
