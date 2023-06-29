@@ -159,6 +159,7 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-# MP3 files and ffmpeg executable
+# MP3 files, ffmpeg executable and test notebook
 *.mp3
 ffmpeg.exe
+test.ipynb
