@@ -9,7 +9,7 @@ or a given file path; and split them into 6 stems through [Hybrid Transformer De
 
 ## SETUP
 
-1.	Install demucs in new environment.
+1.	Install Demucs in new Anaconda environment.
 
 	- Install dependencies and library:
 		```
