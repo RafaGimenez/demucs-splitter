@@ -7,6 +7,7 @@ from pathlib import Path
 
 SONG_DIR = Path("./music")
 STEM_DIR = Path("./stems")
+ROOT_DIR = Path(__file__).parent
 
 ydl_opts = {
     "outtmpl": Path(SONG_DIR, "%(title)s.%(ext)s").as_posix(),
@@ -20,7 +21,7 @@ ydl_opts = {
         }
     ],
     "compat_opts": set(),
-    "ffmpeg_location": "./",
+    "ffmpeg_location": ROOT_DIR,
 }
 
 
@@ -47,6 +48,9 @@ def backing_track(track: str):
 
 
 if __name__ == "__main__":
+    # Ensure ffmpeg binary is present
+    assert Path(ROOT_DIR, "ffmpeg.exe").exists() or Path(ROOT_DIR, "ffmpeg").exists()
+
     # Parse arguments and create music directory
     SONG_DIR.mkdir(parents=True, exist_ok=True)
     parser = argparse.ArgumentParser(description="Stem splitting with Demucs")

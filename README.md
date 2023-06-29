@@ -39,7 +39,7 @@ or a given file path; and split them into 6 stems through [Hybrid Transformer De
 	conda activate demucs
 	pip install yt-dlp
 	```
-3.	Download ffmpeg.exe from https://github.com/yt-dlp/FFmpeg-Builds and place it in the root directory.
+3.	Download ffmpeg binary from https://github.com/yt-dlp/FFmpeg-Builds and place it in the same directory as the script.
 
 ## USAGE
 
