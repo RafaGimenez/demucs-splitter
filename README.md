@@ -11,6 +11,10 @@ or a given file path; and split them into 6 stems through [Hybrid Transformer De
 
 1.	Install Demucs in new Anaconda environment.
 
+	- Make sure to initialize Demucs submodule repository:
+		```
+		git submodule update --init --recursive
+		```
 	- Install dependencies and library:
 		```
 		cd ./demucs_repo
