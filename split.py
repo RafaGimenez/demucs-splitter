@@ -82,5 +82,5 @@ if __name__ == "__main__":
     # Create backing track
     print("Creating guitar backing track...")
     backing_track(track)
-    save_path = Path(STEM_DIR, "htdemucs_6s", track)
+    save_path = Path(STEM_DIR, "htdemucs_6s", track).resolve()
     print(f"\nDone! Stems saved at: {save_path}")
